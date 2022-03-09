@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Conversor de temperatura</h1>
+    </header>
+
+    <main>
+        <!--<h1>Conversão de Escalas Termométricas</h1>-->
+
+        <ul class="temp">
+            <li class="escala">Celsius (°C)</li>
+            <li class="escala esq">&#8646;</li>
+            <li class="escala">Fahrenheit (F°)</li>
+            <li class="escala dir">&#8646;</li>
+            <li class="escala">Kelvin (K)</li>
+        </ul>
+            
+        <div>
+            <label class="label">Digite o valor da escala atual:</label>
+        </div>
+
+        <div>
+            <input type="number" name="valor" id="valor" placeholder="Digite o valor">
+        </div>
+
+        <div>
+            <label class="label">Agora escolha uma Escala Termométrica:</label>
+            <br>
+            <select id="escolha1" class="select">
+                <option selected disabled value = "sel" class="sel">Selecione</option>
+                <option value="celsius" class="selecao">Celsius</option>
+                <option value="fahrenheit" class="selecao">Fahrenheit</option>
+                <option value="kelvin" class="selecao">Kelvin</option>
+            </select>
+
+            <select id="escolha2" class="select">
+                <option selected disabled value = "sel" class="sel">Selecione</option>
+                <option value="celsius" class="selecao">Celsius</option>
+                <option value="fahrenheit" class="selecao">Fahrenheit</option>
+                <option value="kelvin" class="selecao">Kelvin</option>
+            </select>
+
+        </div>
+
+        <div>
+            <button class="botao" onclick="calcular()">Quero converter!</button>
+        </div>
+
+        <div id="resultado">Aguardando resultado...</div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

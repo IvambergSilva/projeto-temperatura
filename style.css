@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor0: #494d4eaa;
+    --cor1: #0091DC;
+    --cor2: #0150d8b1;
+
+    --cor3: #ff611d92;
+    --cor4: #FFC536;
+
+    --font1: 'Spartan', sans-serif;
+    --font2: 'Fredoka', sans-serif;
+    --font3: 'Merriweather Sans', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to left, var(--cor3), var(--cor2));
+    min-width: 300px;
+}
+
+header{
+    background-color: var(--cor0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    width: 400px;
+    margin: 10px auto 40px;
+    border: 1px solid #000;
+}
+header > h1{
+    font: 25px var(--font1);
+}
+/*
+main > h1{
+    font: 20px var(--font3);
+    text-align: center;
+    margin: 20px auto 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+}*/
+
+.temp{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px
+}
+
+.escala{
+    list-style-type: none;
+    padding: 10px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    border: 1px solid #000;
+    font: 20px var(--font2);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    width: 140px;
+    text-align: center;
+    margin: 0 20px 0 20px;
+}
+
+ul > .esq, .dir{
+    width: 10px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+/*.esc:hover{
+    background-color: var(--cor4);
+    transition-duration: 0.4s;
+    transform: scale(1.04);
+    cursor: pointer;
+}*/
+
+#valor{
+    position: relative;
+    left: 50%;   
+    transform: translate(-50%);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--cor2);
+    margin: 60px 0 5px 0;
+    text-align: center;
+    font-family: var(--font1);
+}
+
+.botao{
+    position: absolute;
+    left: 50%;
+    padding: 15px 25px 15px 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    font: 20px var(--font2);
+    margin: 100px 0 0 0;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: var(--cor1);
+    transition-duration: 0.1s;
+    transform: translateX(-50%) scale(1.1);
+    border: 2px solid #000;
+}
+
+div > .label{
+    text-align: center;
+    border: 1px solid #000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 8px;
+    background-color: var(--cor4);
+    color: #000;
+    font: 10px var(--font1);
+    margin: 20px 0;
+}
+
+#escolha1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-125%);
+}
+
+#escolha2{
+    position: absolute;
+    left: 50%;
+    transform: translate(25%);
+}
+
+.select{
+    background-color:var(--cor3);
+    padding: 10px;
+    border-radius: 10px;
+    font: 15px var(--font2);
+    justify-content: space-between;
+    margin: 50px 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.sel{
+    background-color: rgb(200,200,200);
+    color: #FFF;
+
+}
+
+.select:hover{
+    transition-duration: 0.4s;
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.selecao:hover{
+    background-color: #000;
+}
+
+#resultado{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 190px;
+    width: 250px;
+    border: 1px solid #000;
+    text-align: center;
+    font: 20px var(--font3);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
