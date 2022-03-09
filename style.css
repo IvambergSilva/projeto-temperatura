@@ -41,16 +41,7 @@ header{
 header > h1{
     font: 25px var(--font1);
 }
-/*
-main > h1{
-    font: 20px var(--font3);
-    text-align: center;
-    margin: 20px auto 25px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    width: fit-content;
-    padding: 5px;
-}*/
+
 
 .temp{
     display: flex;
@@ -72,7 +63,7 @@ main > h1{
     margin: 0 20px 0 20px;
 }
 
-ul > .esq, .dir{
+ul > .esq, ul > .dir{
     width: 10px;
     margin: 0;
     padding: 10px 0 10px 0;
@@ -80,12 +71,6 @@ ul > .esq, .dir{
     border: none;
     box-shadow: none;
 }
-/*.esc:hover{
-    background-color: var(--cor4);
-    transition-duration: 0.4s;
-    transform: scale(1.04);
-    cursor: pointer;
-}*/
 
 #valor{
     position: relative;
@@ -173,7 +158,7 @@ div > .label{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin-top: 190px;
+    margin-top: 170px;
     width: 250px;
     border: 1px solid #000;
     text-align: center;
@@ -181,4 +166,32 @@ div > .label{
     padding: 5px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* Media Queries*/
+
+@media (max-width: 420px){
+    .header{
+        width: 200px;
+    }
+
+    #valor{
+        margin-top: 75px;
+    }
+
+    #resultado{
+        margin-top: 190px;
+    }
+    .escala{
+        width: 70px;
+        padding: 2px 8px;
+        margin: 0;
+    }
+    ul > .esq, ul > .dir{
+        margin: 5px 8px 0px 3px;
+    }
+    .escala:nth-child(3){
+        width: 100px;
+    }
+   
 }
